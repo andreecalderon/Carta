@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi novia?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <h1>¿Quieres ser mi novia?</h1>
+            <p class="message">Eres una persona increíble y cada momento contigo es especial. <br>
+            ¿Te gustaría ser mi novia y compartir muchos más momentos juntos?</p>
+            <div class="button-group">
+                <button onclick="showMessage('¡Sí, quiero!')">Sí</button>
+                <button onclick="showMessage('Lo pensaré...')">Lo pensaré...</button>
+            </div>
+            <p id="response" class="response"></p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage(message) {
+            const responseElement = document.getElementById('response');
+            responseElement.innerText = message;
+            responseElement.style.opacity = 1;
+        }
+    </script>
+</body>
+</html>

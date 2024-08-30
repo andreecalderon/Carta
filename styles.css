@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f3e8; /* Fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+.carta {
+    background: #fff;
+    border: 2px solid #e8c7b8;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    line-height: 1.8;
+    max-width: 600px; /* Ancho por defecto */
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #b06f7e;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #b06f7e;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.carta h1:last-of-type {
+    margin-top: 40px;
+    font-size: 2em;
+    text-align: center;
+    color: #c97c8c;
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 600px) {
+    .carta {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .carta h1:last-of-type {
+        font-size: 1.5em;
+    }
+}
+
+/* Estilos para pantallas grandes (computadoras) */
+@media (min-width: 1200px) {
+    .carta {
+        max-width: 800px; /* Ancho más grande para pantallas grandes */
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    .carta h1:last-of-type {
+        font-size: 2.5em;
+    }
+}

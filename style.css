@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('ruta/de/tu/imagen.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/2301887177/display_1500/stock-vector-cute-mini-pig-with-a-kind-smiling-face-and-big-eyes-vector-pet-illustration-drawn-in-a-cartoon-d-2301887177.jpg'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover;
     background-position: center;
     font-family: 'Poppins', sans-serif;
@@ -47,6 +47,23 @@ h1 {
 .button-group {
     display: flex;
     justify-content: space-around;
+}
+
+a.button {
+    background-color: #ff6b81;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
 }
 
 button {
